@@ -1,0 +1,23 @@
+{
+  "name": "crip-grid-url",
+  "version": "1.0.0",
+  "description": "AngularJS crip grid url plugin",
+  "main": "gulpfile.js",
+  "authors": [
+    "Igors Krasjukovs <tahq69@gmail.com> (https://github.com/tahq69)"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "grid"
+  ],
+  "homepage": "https://github.com/crip-angular/grid-url",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
