@@ -1,17 +1,8 @@
-var gulp = require('gulp'),
-    crip = require('cripweb');
+var gulp = require('gulp');
+var cripweb = require('cripweb')(gulp);
 
-crip.scripts([
-        '**/*.module.js',
-        '**/*Config.js',
-        '**/*.js'
-    ],
-    'crip-grid-url',
-    'scripts',
-    'resources',
-    'build');
+cripweb(function (crip) {
+    crip.config.set('scripts', { base: 'resources', output: 'build' });
 
-gulp.task('default', function () {
-    crip.gulp.start('crip-default');
-    crip.watch();
+    crip.scripts('crip-grid-url', ['**/*.module.js', '**/*Config.js', '**/*.js'], true)
 });
